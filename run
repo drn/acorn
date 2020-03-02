@@ -22,4 +22,6 @@ cp -f ~/.acorn/aliases ~/.bash_aliases
 
 # ensure rtorrent.rc
 mkdir -p ~/.config/rtorrent
-cat ~/.acorn/rtorrent | sed -re "s:/home/USERNAME:$HOME:" > ~/.config/rtorrent/rtorrent.rc
+cat ~/.acorn/rtorrent | \
+  sed -re "s:/home/USERNAME:$HOME:" > \
+  ~/.rtorrent.rc
