@@ -1,4 +1,4 @@
-alias acorn="~/.acorn/update && ~/.acorn/run && source ~/.bash_aliases"
+alias acorn="~/.acorn/update && ~/.acorn/run && source ~/.bash_aliases && source ~/.bash_profile"
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'

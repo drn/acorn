@@ -17,7 +17,8 @@ mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/torrent
 mkdir -p ~/private/rtorrent/data/tv
 
-# ensure ~/.bash_aliases
+# ensure ~/.bash_*
+cp -f ~/.acorn/profile ~/.bash_profile
 cp -f ~/.acorn/aliases ~/.bash_aliases
 
 # ensure rtorrent.rc
