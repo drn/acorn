@@ -10,7 +10,6 @@ Initial installation:
 
 ```bash
 git clone https://github.com/drn/acorn.git ~/.acorn
-cd ~/.acorn
 ~/.acorn/run
 ```
 
