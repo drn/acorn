@@ -19,3 +19,7 @@ mkdir -p ~/private/rtorrent/data/tv
 
 # ensure ~/.bash_aliases
 cp -f ~/.acorn/aliases ~/.bash_aliases
+
+# ensure rtorrent.rc
+mkdir -p ~/.config/rtorrent
+cp -f ~/.acorn/rtorrent ~/.config/rtorrent/rtorrent.rc
