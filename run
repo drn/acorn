@@ -25,3 +25,8 @@ mkdir -p ~/.config/rtorrent
 cat ~/.acorn/rtorrent | \
   sed -re "s:/home/USERNAME:$HOME:" > \
   ~/.rtorrent.rc
+
+# ensure rutorrent config.php
+cd ~/www/*/public_html/rutorrent/conf/users
+mkdir -p "$(whoami)"
+cp ~/.acorn/rutorrent "$(whoami)/config.php"
