@@ -16,3 +16,6 @@ mkdir -p ~/private/rtorrent/data/pre-processed-tv
 mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/torrent
 mkdir -p ~/private/rtorrent/data/tv
+
+# ensure ~/.bash_aliases
+cp -f ~/.acorn/aliases ~/.bash_aliases
