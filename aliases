@@ -15,3 +15,4 @@ alias down='cd ~/downloads'
 alias tv='cd ~/downloads/tv'
 alias movies='cd ~/downloads/movies'
 alias safe='cd ~/downloads/safe'
+alias restart="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
