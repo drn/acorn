@@ -1,6 +1,6 @@
 # Acorn
 
-Idempotent bootstrapping for seedbox
+Idempotently seedbox bootstraping
 
 * * *
 
@@ -17,8 +17,6 @@ cd ~/.acorn
 Regular update:
 
 ```bash
-cd ~/.acorn
-git fetch
-git reset --hard origin/master
+~/.acorn/update
 ~/.acorn/run
 ```
