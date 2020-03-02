@@ -1,0 +1,18 @@
+#!/bin/bash -eux
+
+# ensure ~/downloads structure
+mkdir -p ~/downloads
+mkdir -p ~/downloads/blackhole
+mkdir -p ~/downloads/movies
+mkdir -p ~/downloads/pre-processed-tv
+mkdir -p ~/downloads/safe
+mkdir -p ~/downloads/torrent
+mkdir -p ~/downloads/tv
+
+# ensure ~/private/rtorrent structure
+mkdir -p ~/private/rtorrent/data/blackhole
+mkdir -p ~/private/rtorrent/data/movies
+mkdir -p ~/private/rtorrent/data/pre-processed-tv
+mkdir -p ~/private/rtorrent/data/safe
+mkdir -p ~/private/rtorrent/data/torrent
+mkdir -p ~/private/rtorrent/data/tv
