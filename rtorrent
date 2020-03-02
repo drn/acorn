@@ -110,7 +110,7 @@ method.insert = d.session_file, simple, "cat=(session.path), (d.hash), .torrent"
 ## Run the rTorrent process as a daemon in the background
 ## (and control via XMLRPC sockets)
 #system.daemon.set = true
-#network.scgi.open_local = (cat,(session.path),rpc.socket)
+network.scgi.open_local = (cat,(session.path),rpc.socket)
 #execute.nothrow = chmod,770,(cat,(session.path),rpc.socket)
 
 
