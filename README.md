@@ -1,6 +1,6 @@
 # Acorn
 
-Idempotently seedbox bootstraping
+Idempotent seedbox bootstraping
 
 * * *
 
@@ -17,6 +17,5 @@ cd ~/.acorn
 Regular update:
 
 ```bash
-~/.acorn/update
-~/.acorn/run
+acorn
 ```
