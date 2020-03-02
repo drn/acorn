@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ~/.acorn
+cd ~/.acorn || exit 1
 git fetch
 git reset --hard origin/master
