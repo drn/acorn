@@ -21,12 +21,15 @@ mkdir -p ~/private/rtorrent/data/pre-processed-tv
 mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/tv
 
-# ensure ~/rtorrent symlink exists
-ln -sf ~/private/rtorrent ~
-
 # ensure ~/.bash_*
 cp -f ~/.acorn/profile ~/.bash_profile
 cp -f ~/.acorn/aliases ~/.bash_aliases
+
+# ensure ~/rtorrent symlink exists
+ln -sf ~/private/rtorrent ~
+
+# ensure rtorrent version
+echo -n '0.9.6_w0.13.6' > ~/private/rtorrent/.version
 
 # ensure rtorrent.rc
 cat ~/.acorn/rtorrent | \
