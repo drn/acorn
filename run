@@ -9,20 +9,22 @@ mkdir -p ~/downloads/safe
 mkdir -p ~/downloads/torrent
 mkdir -p ~/downloads/tv
 
-# ensure ~/rtorrent structure
-mkdir -p ~/rtorrent/data/blackhole
-mkdir -p ~/rtorrent/data/movies
-mkdir -p ~/rtorrent/data/pre-processed-tv
-mkdir -p ~/rtorrent/data/safe
-mkdir -p ~/rtorrent/data/torrent
-mkdir -p ~/rtorrent/data/tv
+# ensure ~/private/rtorrent structure
+mkdir -p ~/private/rtorrent/data/blackhole
+mkdir -p ~/private/rtorrent/data/movies
+mkdir -p ~/private/rtorrent/data/pre-processed-tv
+mkdir -p ~/private/rtorrent/data/safe
+mkdir -p ~/private/rtorrent/data/torrent
+mkdir -p ~/private/rtorrent/data/tv
+
+# ensure ~/rtorrent symlink exists
+ln -sf ~/private/rtorrent ~/rtorrent
 
 # ensure ~/.bash_*
 cp -f ~/.acorn/profile ~/.bash_profile
 cp -f ~/.acorn/aliases ~/.bash_aliases
 
 # ensure rtorrent.rc
-mkdir -p ~/.config/rtorrent
 cat ~/.acorn/rtorrent | \
   sed -re "s:/home/USERNAME:$HOME:" > \
   ~/.rtorrent.rc
