@@ -33,3 +33,30 @@ cat ~/.acorn/rtorrent | \
 cd ~/www/*/public_html/rutorrent/conf/users
 mkdir -p "$(whoami)"
 cp ~/.acorn/rutorrent "$(whoami)/config.php"
+
+# install pip virtualenv
+pip install --user virtualenv
+~/.local/bin/virtualenv ~/pip --system-site-packages
+
+# install sickchill and dependencies
+git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null || true
+cd ~/SickChill
+git fetch
+git reset --hard origin/master
+~/pip/bin/pip install --upgrade -r ~/SickChill/requirements/requirements.txt
+~/pip/bin/pip install --upgrade pyopenssl
+
+# initial sickchill configuration
+if [ ! -d ~/.SickChill.tv.shows ]; then
+  # boot sickchill to setup initial files
+  ~/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid"
+  pkill -9 -fu "$(whoami)" 'SickChill/SickBeard.py'
+  rm -rf ~/SickChill/SickChill.pid && sleep 10
+
+  # generate ~/.SickChill.tv.shows
+  mkdir ~/.SickChill.tv.shows
+  sed -ri 's|web_port = (.*)|web_port = '"$(shuf -i 10001-32001 -n 1)"'|g' ~/SickChill/config.ini
+  sed -ri 's|web_root = (.*)|web_root = /'"$(whoami)"'/sickchill|g' ~/SickChill/config.ini
+  sed -ri 's|launch_browser = 1|launch_browser = 0|g' ~/SickChill/config.ini
+  sed -ri 's#root_dirs = (.*)#root_dirs = '"$HOME"'/.SickChill.tv.shows#g' ~/SickChill/config.ini
+fi
