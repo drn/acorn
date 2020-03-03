@@ -119,7 +119,7 @@ network.scgi.open_local = (cat,(session.path),rpc.socket)
 ##   Groups = connection_* dht_* peer_* rpc_* storage_* thread_* tracker_* torrent_*
 print = (cat, "Logging to ", (cfg.logfile))
 log.open_file = "log", (cfg.logfile)
-log.add_output = "info", "log"
+log.add_output = "debug", "log"
 #log.add_output = "tracker_debug", "log"
 
 ### END of rtorrent.rc ###
