@@ -1,2 +1,2 @@
 <?php
-  $scgi_host = 'unix://'.$_pw['dir'].'/private/rtorrent/.session/rpc.socket';
+  $scgi_host = 'unix://'.$_pw['dir'].'/private/rtorrent/.socket';
