@@ -18,7 +18,7 @@ mkdir -p ~/private/rtorrent/data/torrent
 mkdir -p ~/private/rtorrent/data/tv
 
 # ensure ~/rtorrent symlink exists
-ln -sf ~/private/rtorrent ~/rtorrent
+ln -s ~/private/rtorrent ~
 
 # ensure ~/.bash_*
 cp -f ~/.acorn/profile ~/.bash_profile
