@@ -1,6 +1,6 @@
 # Acorn
 
-Idempotent seedbox bootstraping
+Idempotent bootstrapping
 
 * * *
 
