@@ -10,6 +10,7 @@ alias la='ls -lAh'
 alias l='ls -lah'
 alias vi='vim'
 alias v='vim'
+alias v.="vim ."
 alias g='git'
 alias down='cd ~/downloads'
 alias tv='cd ~/downloads/tv'
