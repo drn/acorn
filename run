@@ -44,6 +44,14 @@ cp ~/.acorn/rutorrent "$(whoami)/config.php"
 # ensure ~/src directory exists
 mkdir -p ~/src
 
+# reinstall go
+mkdir -p ~/tmp
+wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz -O ~/tmp/go.tar.gz
+tar -xvf ~/tmp/go.tar.gz -C ~/tmp
+rm -rf ~/src/go
+mv ~/tmp/go ~/src
+rm -rf ~/tmp
+
 # install pip virtualenv
 pip install --user virtualenv
 ~/.local/bin/virtualenv ~/src/pip --system-site-packages
