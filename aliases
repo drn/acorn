@@ -17,6 +17,6 @@ alias movies='cd ~/downloads/movies'
 alias safe='cd ~/downloads/safe'
 alias connect-rtorrent="screen -r rtorrent"
 alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
-alias sickchill="~/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid" && echo http://$(hostname -f):$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)/$(whoami)/sickchill"
+alias sickchill="~/src/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid" && echo http://$(hostname -f):$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)/$(whoami)/sickchill"
 alias stop-sickchill="pkill -fu $(whoami) 'SickChill/SickBeard.py'"
-alias restart-sickchill="pkill -fu $(whoami) 'SickChill/SickBeard.py' && rm -rf ~/SickChill/SickChill.pid && ~/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile=$HOME/SickChill/SickChill.pid"
+alias restart-sickchill="pkill -fu $(whoami) 'SickChill/SickBeard.py' && rm -rf ~/SickChill/SickChill.pid && ~/src/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile=$HOME/SickChill/SickChill.pid"

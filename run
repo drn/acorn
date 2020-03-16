@@ -41,22 +41,25 @@ cd ~/www/*/public_html/rutorrent/conf/users
 mkdir -p "$(whoami)"
 cp ~/.acorn/rutorrent "$(whoami)/config.php"
 
+# ensure ~/src directory exists
+mkdir -p ~/src
+
 # install pip virtualenv
 pip install --user virtualenv
-~/.local/bin/virtualenv ~/pip --system-site-packages
+~/.local/bin/virtualenv ~/src/pip --system-site-packages
 
 # install sickchill and dependencies
 git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null || true
 cd ~/SickChill
 git fetch
 git reset --hard origin/master
-~/pip/bin/pip install --upgrade -r ~/SickChill/requirements/requirements.txt
-~/pip/bin/pip install --upgrade pyopenssl
+~/src/pip/bin/pip install --upgrade -r ~/SickChill/requirements/requirements.txt
+~/src/pip/bin/pip install --upgrade pyopenssl
 
 # initial sickchill configuration
 if [ ! -d ~/.SickChill.tv.shows ]; then
   # boot sickchill to setup initial files
-  ~/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid"
+  ~/src/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid"
   pkill -9 -fu "$(whoami)" 'SickChill/SickBeard.py'
   rm -rf ~/SickChill/SickChill.pid && sleep 10
 
