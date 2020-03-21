@@ -52,6 +52,10 @@ rm -rf ~/src/go
 mv ~/tmp/go ~/src
 rm -rf ~/tmp
 
+# configure ~/bin
+mkdir -p ~/bin
+cp ~/.acorn/sickchill ~/bin/sickchill
+
 # install pip virtualenv
 pip install --user virtualenv
 ~/.local/bin/virtualenv ~/src/pip --system-site-packages

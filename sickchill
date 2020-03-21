@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Boots SickChill
+
+echo "Booting SickChill..."
+
+~/src/pip/bin/python \
+  ~/SickChill/SickBeard.py -d \
+  --pidfile="$HOME/SickChill/SickChill.pid" && \
+  echo http://$(hostname -f):$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)/$(whoami)/sickchill
