@@ -65,7 +65,7 @@ git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null || 
 cd ~/SickChill
 git fetch
 git reset --hard origin/master
-~/src/pip/bin/pip install --upgrade -r ~/SickChill/requirements/requirements.txt
+~/src/pip/bin/pip install --upgrade -r ~/SickChill/requirements.txt
 ~/src/pip/bin/pip install --upgrade pyopenssl
 
 # initial sickchill configuration
