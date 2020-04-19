@@ -24,6 +24,7 @@ mkdir -p ~/private/rtorrent/data/tv
 # ensure ~/.bash_*
 cp -f ~/.acorn/profile ~/.bash_profile
 cp -f ~/.acorn/aliases ~/.bash_aliases
+cp -f ~/.acorn/gitconfig ~/.gitconfig
 
 # ensure ~/rtorrent symlink exists
 ln -sf ~/private/rtorrent ~
