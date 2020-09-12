@@ -57,23 +57,23 @@ rm -rf ~/tmp
 mkdir -p ~/bin
 cp ~/.acorn/sickchill ~/bin/sickchill
 
-# install pip virtualenv
-pip install --user virtualenv
-~/.local/bin/virtualenv ~/src/pip --system-site-packages
+# install pip3 virtualenv
+pip3 install --user virtualenv
+~/.local/bin/virtualenv ~/src/pip3 --system-site-packages
 
 # install sickchill and dependencies
 git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null || true
 cd ~/SickChill
 git fetch
 git reset --hard origin/master
-~/src/pip/bin/pip install --upgrade -r ~/SickChill/requirements.txt
-~/src/pip/bin/pip install --upgrade pyopenssl
+~/src/pip3/bin/pip3 install --upgrade -r ~/SickChill/requirements.txt
+~/src/pip3/bin/pip3 install --upgrade pyopenssl
 
 # initial sickchill configuration
 if [ ! -d ~/.SickChill.tv.shows ]; then
   # boot sickchill to setup initial files
-  ~/src/pip/bin/python ~/SickChill/SickBeard.py -d --pidfile="$HOME/SickChill/SickChill.pid"
-  pkill -9 -fu "$(whoami)" 'SickChill/SickBeard.py'
+  ~/src/pip3/bin/python ~/SickChill/SickChill.py -d --pidfile="$HOME/SickChill/SickChill.pid"
+  pkill -9 -fu "$(whoami)" 'SickChill/SickChill.py'
   rm -rf ~/SickChill/SickChill.pid && sleep 10
 
   # generate ~/.SickChill.tv.shows

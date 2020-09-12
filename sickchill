@@ -4,7 +4,7 @@
 
 echo "Booting SickChill..."
 
-~/src/pip/bin/python \
+~/src/pip3/bin/python \
   ~/SickChill/SickChill.py -d \
   --pidfile="$HOME/SickChill/SickChill.pid" && \
   echo http://$(hostname -f):$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)/$(whoami)/sickchill
