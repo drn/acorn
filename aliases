@@ -19,4 +19,4 @@ alias safe='cd ~/downloads/safe'
 alias connect-rtorrent="screen -r rtorrent"
 alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
 alias stop-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py'"
-alias restart-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py' && rm -rf ~/SickChill/SickChill.pid && ~/src/pip/bin/python ~/SickChill/SickChill.py -d --pidfile=$HOME/SickChill/SickChill.pid"
+alias restart-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py' && rm -rf ~/SickChill/SickChill.pid && ~/src/python3/python ~/SickChill/SickChill.py -d --pidfile=$HOME/SickChill/SickChill.pid"
