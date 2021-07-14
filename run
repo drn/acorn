@@ -118,8 +118,8 @@ git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null \
 cd ~/SickChill
 git fetch
 git reset --hard origin/master
-~/src/python3/python -m pip install --upgrade -r ~/SickChill/requirements.txt
-~/src/python3/python -m pip install --upgrade pyopenssl
+~/src/python3/python -m pip install --upgrade
+~/src/python3/python -m pip install --upgrade sickchill pyopenssl
 
 # initial sickchill configuration
 if [ ! -d ~/.SickChill.tv.shows ]; then
