@@ -105,6 +105,9 @@ else
   fi
 fi
 
+# upgrade pip and install virtualenv
+~/src/python3/python -m pip install --upgrade virtualenv pip
+
 # configure ~/bin
 mkdir -p ~/bin
 cp ~/.acorn/sickchill ~/bin/sickchill
