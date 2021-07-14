@@ -13,7 +13,6 @@ echo "Booting SickChill..."
 
 # shellcheck disable=SC2181
 if [ $? = 0 ]; then
-  echo "http://$(hostname -f):"\
-    "$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)"\
-    "/$(whoami)/sickchill"
+  port="$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)"
+  echo "http://$(hostname -f):$port/$(whoami)/sickchill"
 fi
