@@ -5,6 +5,15 @@
 echo "Booting SickChill..."
 
 ~/src/python3/python \
-  ~/SickChill/SickChill.py -d \
-  --pidfile="$HOME/SickChill/SickChill.pid" && \
-  echo http://$(hostname -f):$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)/$(whoami)/sickchill
+  ~/SickChill/SickChill.py \
+  -d --nolaunch \
+  --pidfile="$HOME/SickChill/SickChill.pid" \
+  --config="$HOME/SickChill/config.ini" \
+  --datadir="$HOME/SickChill"
+
+# shellcheck disable=SC2181
+if [ $? = 0 ]; then
+  echo "http://$(hostname -f):"\
+    "$(sed -rn 's/(.*)web_port = //p' ~/SickChill/config.ini)"\
+    "/$(whoami)/sickchill"
+fi
