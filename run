@@ -96,13 +96,13 @@ fi
 
 # install pip for python 3.6
 version="$(~/src/python3/python -m pip --version 2>/dev/null || true)"
-if [[ "$version" == "pip 20.2.3"* ]]; then
+if [[ "$version" == "pip 21.3.1"* ]]; then
   echo "pip already installed"
   echo "  $version"
 else
   wget -qO- https://bootstrap.pypa.io/get-pip.py | ~/src/python3/python
   version="$(~/src/python3/python -m pip --version 2>/dev/null)"
-  if [[ "$version" != "pip 21.1.3"* ]]; then
+  if [[ "$version" != "pip 21.3.1"* ]]; then
     echo "pip installation failed"
     echo "  $version"
     exit 0
