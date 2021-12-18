@@ -21,3 +21,4 @@ alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rto
 alias stop-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py'"
 alias restart-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py' && rm -rf ~/SickChill/SickChill.pid && ~/src/python3/python ~/SickChill/SickChill.py -d --pidfile=$HOME/SickChill/SickChill.pid"
 alias sickchill-logs="tail -f ~/SickChill/Logs/sickchill.log"
+alias clean="rm -rf ~/www/*/public_html/rutorrent/share/users/*/torrents/*"
