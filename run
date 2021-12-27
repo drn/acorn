@@ -114,7 +114,7 @@ fi
 
 # configure ~/bin
 mkdir -p ~/bin
-cp ~/.acorn/sickchill ~/bin/sickchill
+cp -f ~/.acorn/bin/* ~/bin
 
 # install sickchill and dependencies
 git clone https://github.com/SickChill/SickChill.git ~/SickChill 2>/dev/null \
