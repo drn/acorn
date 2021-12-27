@@ -2,4 +2,5 @@
   # show an ASCII version of the commit tree
   tree = !"git log --graph --decorate --oneline --all; git --no-pager diff --stat"
   t = !"git tree"
-  rh = "reset --hard"
+  rh = reset --hard
+  f = fetch
