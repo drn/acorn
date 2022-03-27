@@ -17,6 +17,7 @@ alias tv='cd ~/downloads/tv'
 alias pre='cd ~/downloads/pre-processed-tv'
 alias movies='cd ~/downloads/movies'
 alias safe='cd ~/downloads/safe'
+alias start-rtorrent="nohup /usr/local/bin/rtorrent &"
 alias connect-rtorrent="screen -r rtorrent"
 alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
 alias stop-sickchill="pkill -fu $(whoami) 'SickChill/SickChill.py'"
