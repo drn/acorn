@@ -1,6 +1,6 @@
 # Acorn
 
-Idempotent bootstrapping
+Idempotent :chestnut: :package: bootstrapping
 
 * * *
 
