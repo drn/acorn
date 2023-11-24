@@ -7,6 +7,7 @@ mkdir -p ~/downloads/blackhole
 mkdir -p ~/downloads/manga
 mkdir -p ~/downloads/misc
 mkdir -p ~/downloads/movies
+mkdir -p ~/downloads/movies-4k
 mkdir -p ~/downloads/pre-processed-tv
 mkdir -p ~/downloads/safe
 mkdir -p ~/downloads/torrents
@@ -15,6 +16,7 @@ mkdir -p ~/downloads/torrents/blackhole
 mkdir -p ~/downloads/torrents/manga
 mkdir -p ~/downloads/torrents/misc
 mkdir -p ~/downloads/torrents/movies
+mkdir -p ~/downloads/torrents/movies-4k
 mkdir -p ~/downloads/torrents/pre-processed-tv
 mkdir -p ~/downloads/torrents/safe
 mkdir -p ~/downloads/torrents/tv
@@ -26,6 +28,7 @@ mkdir -p ~/private/rtorrent/data/blackhole
 mkdir -p ~/private/rtorrent/data/manga
 mkdir -p ~/private/rtorrent/data/misc
 mkdir -p ~/private/rtorrent/data/movies
+mkdir -p ~/private/rtorrent/data/movies-4k
 mkdir -p ~/private/rtorrent/data/pre-processed-tv
 mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/tv
