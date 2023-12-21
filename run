@@ -9,7 +9,6 @@ mkdir -p ~/downloads/misc
 mkdir -p ~/downloads/movies
 mkdir -p ~/downloads/movies-4k
 mkdir -p ~/downloads/music
-mkdir -p ~/downloads/pre-processed-tv
 mkdir -p ~/downloads/safe
 mkdir -p ~/downloads/torrents
 mkdir -p ~/downloads/torrents/audiobooks
@@ -19,7 +18,6 @@ mkdir -p ~/downloads/torrents/misc
 mkdir -p ~/downloads/torrents/movies
 mkdir -p ~/downloads/torrents/movies-4k
 mkdir -p ~/downloads/torrents/music
-mkdir -p ~/downloads/torrents/pre-processed-tv
 mkdir -p ~/downloads/torrents/safe
 mkdir -p ~/downloads/torrents/tv
 mkdir -p ~/downloads/tv
@@ -32,7 +30,6 @@ mkdir -p ~/private/rtorrent/data/misc
 mkdir -p ~/private/rtorrent/data/movies
 mkdir -p ~/private/rtorrent/data/movies-4k
 mkdir -p ~/private/rtorrent/data/music
-mkdir -p ~/private/rtorrent/data/pre-processed-tv
 mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/tv
 

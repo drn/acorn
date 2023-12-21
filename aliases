@@ -15,7 +15,6 @@ alias g='git'
 alias down='cd ~/downloads'
 alias misc='cd ~/downloads/misc'
 alias movies='cd ~/downloads/movies'
-alias pre='cd ~/downloads/pre-processed-tv'
 alias safe='cd ~/downloads/safe'
 alias tv='cd ~/downloads/tv'
 alias start-rtorrent="nohup /usr/local/bin/rtorrent &"
