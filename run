@@ -20,7 +20,9 @@ mkdir -p ~/downloads/torrents/movies-4k
 mkdir -p ~/downloads/torrents/music
 mkdir -p ~/downloads/torrents/safe
 mkdir -p ~/downloads/torrents/tv
+mkdir -p ~/downloads/torrents/tv-4k
 mkdir -p ~/downloads/tv
+mkdir -p ~/downloads/tv-4k
 
 # ensure ~/private/rtorrent structure
 mkdir -p ~/private/rtorrent/data/audiobooks
@@ -32,6 +34,7 @@ mkdir -p ~/private/rtorrent/data/movies-4k
 mkdir -p ~/private/rtorrent/data/music
 mkdir -p ~/private/rtorrent/data/safe
 mkdir -p ~/private/rtorrent/data/tv
+mkdir -p ~/private/rtorrent/data/tv-4k
 
 # ensure ~/.bash_*
 cp -f ~/.acorn/profile ~/.bash_profile
