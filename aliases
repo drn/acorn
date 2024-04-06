@@ -21,3 +21,5 @@ alias start-rtorrent="nohup /usr/local/bin/rtorrent &"
 alias connect-rtorrent="screen -r rtorrent"
 alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
 alias clean="rm -rf ~/www/*/public_html/rutorrent/share/users/*/torrents/*"
+alias data='cd ~/private/rtorrent/data'
+
