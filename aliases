@@ -22,4 +22,4 @@ alias connect-rtorrent="screen -r rtorrent"
 alias restart-rtorrent="killall -9 -u $(whoami) rtorrent; screen -S rtorrent rtorrent"
 alias clean="rm -rf ~/www/*/public_html/rutorrent/share/users/*/torrents/*"
 alias data='cd ~/private/rtorrent/data'
-
+alias unfail='for f in *.fail; do mv "$f" "${f/.fail}"; done'
