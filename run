@@ -45,7 +45,7 @@ cp -f ~/.acorn/gitconfig ~/.gitconfig
 ln -sf ~/private/rtorrent ~
 
 # ensure rtorrent version
-echo -n '0.9.8_w0.13.8' > ~/private/rtorrent/.version
+echo -n 'rakshasa_v0_10_0' > ~/private/rtorrent/.version
 
 # ensure rtorrent.rc
 cat ~/.acorn/rtorrent | \
