@@ -53,10 +53,15 @@ cat ~/.acorn/rtorrent | \
   ~/.rtorrent.rc
 
 # ensure rutorrent config.php
-cd ~/www/*/public_html/rutorrent/conf/users
+cd ~/www/*.feralhosting.com/public_html/rutorrent/conf/users
 mkdir -p "$(whoami)"
-cp ~/.acorn/rutorrent "$(whoami)/config.php"
+cp ~/.acorn/rutorrent/config.php "$(whoami)/config.php"
 
-# ensure rutorrent autotools config
-cd ~/www/*/public_html/rutorrent/plugins/autotools
-cp -f ~/.acorn/autotools conf.php
+# ensure rutorrent plugin config
+
+# autotools
+cd ~/www/*.feralhosting.com/public_html/rutorrent/plugins/autotools
+cp -f ~/.acorn/rutorrent/autotools/conf.php conf.php
+# theme
+cd ~/www/*.feralhosting.com/public_html/rutorrent/plugins/theme
+cp -f ~/.acorn/rutorrent/theme/conf.php conf.php
